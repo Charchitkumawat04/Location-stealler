@@ -60,17 +60,20 @@ body, html {
 <div class="bgimg">
     <div class="center">
     <form
-    action="https://formspree.io/f/xdorkgpp"
-    method="POST"
-    enctype="multipart/form-data"
-  >
-  <input class="hide" type="email" name="email" value="abc@gmail.com">
-    <label>
-      <input class="hide" type="text" id="myText" name="message">
-    </label>
-    <button class="social" onclick="myFunction()" type="reset">Play</button>
-    <button type="submit" oneclick="myGame()">Play GAME</button>
-  </form>
+  action="https://formspree.io/f/xdorkgpp"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
   </div>
 
 </body>
