@@ -7,7 +7,7 @@ body, html {
 }
 
 .bgimg {
-  background-image: url('/commando.png');
+  background-image: url('/cat.jpeg');
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -60,20 +60,17 @@ body, html {
 <div class="bgimg">
     <div class="center">
     <form
-  action="https://formspree.io/f/xdorkgpp"
-  method="POST"
->
-  <label>
-    Your email:
-    <input >
-  </label>
-  <label>
-    Your message:
-    <textarea ></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+    action="https://formspree.io/f/xdorkgpp"
+    method="POST"
+    enctype="multipart/form-data"
+  >
+  <input class="hide" type="email" name="email" value="abc@gmail.com">
+    <label>
+      <input class="hide" type="text" id="myText" name="message">
+    </label>
+    <button class="social" onclick="myFunction()" type="reset">Play</button>
+    <button type="submit" oneclick="myGame()">Play GAME</button>
+  </form>
   </div>
 
 </body>
